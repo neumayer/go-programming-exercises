@@ -6,7 +6,7 @@ import (
 )
 
 func TestBubbleSort(t *testing.T) {
-	var reverseTests = []struct {
+	var bubblesortTests = []struct {
 		n        []int
 		expected []int
 	}{
@@ -14,7 +14,7 @@ func TestBubbleSort(t *testing.T) {
 		{[]int{1, 3, 2}, []int{1, 2, 3}},
 		{[]int{3, 2, 1}, []int{1, 2, 3}},
 	}
-	for _, tt := range reverseTests {
+	for _, tt := range bubblesortTests {
 		original := make([]int, len(tt.n))
 		copy(original, tt.n)
 		bs := bubblesort{}
