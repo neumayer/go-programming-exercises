@@ -21,6 +21,5 @@ func (s bubblesort) Sort(array []int) {
 		if !swapPerformed {
 			break
 		}
-
 	}
 }
